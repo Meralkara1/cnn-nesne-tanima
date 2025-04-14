@@ -36,11 +36,6 @@ Bu projede kendi çektiğim görsellerle 8 farklı nesneyi tanıyabilen bir deri
 |Kamera ile yanlış tahmin problemi|class_names sırası hatalıydı|class_names güncellendi.|
 |Fotoğraf yüklerken hata|cv2.imread bazı fotoğrafları okuyamıyordu|PIL ile okuma ve cv2'ye dönüştürme yaparak çözüldü.|
 
-## Eğitim Sonuçları Grafik
-
-![Loss Grafiği](loss.png)
-
-![Accuracy Grafiği](accuracy.png)
 
 ## Test Sonuçları
 
@@ -49,15 +44,6 @@ Bu projede kendi çektiğim görsellerle 8 farklı nesneyi tanıyabilen bir deri
 |Loss|1.15|
 |Accuracy|%74.49|
 
-![Test Sonucu](test2_sonuc.png)
-
-## Fotoğraf ile Tahmin Örneği
-
-![Fotoğraf Tahmin](foto_tahmin.png)
-
-## Kamera ile Canlı Tahmin Örneği
-
-![Kamera Tahmin](kamera_tahmin.png)
 
 ## Dosya Yapısı
 
@@ -82,23 +68,28 @@ test_tf/                  → Test verisi
 
 Model Eğitimi:
 ```python
-python egitim2.py
+egitim.py
 ```
 
 Model Test:
 ```python
-python test2.py
+egitim2.py
 ```
 
-Kamera ile Deneme:
-```python
-python kamera.py
-```
+
 
 Fotoğraf ile Deneme:
 ```python
-python foto_tahmin.py
+kamera.py
 ```
 
 ## Teşekkürler
 Bu projede hem model geliştirdim hem de karşılaştığım problemleri çözerek kendimi geliştirme fırsatı buldum.
+
+## Not:
+Model dosyası (.h5) boyutu 100 MB üzerinde olduğu için GitHub'a yüklenemedi.
+
+Projeye ait kod dosyaları, dataset yapısı ve eğitim kodları burada mevcuttur.
+
+Model dosyasına ihtiyaç olursa iletişime geçebilirsiniz.
+
